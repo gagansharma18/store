@@ -3,8 +3,7 @@ import request from "request-promise";
 const getProductsUri = "http://localhost:3000/index.json";
 
 export const actionType = {
-	GET_PRODUCTS: "get_products",
-    GET_PRODUCT_DETAILS: "get_product_details"
+	GET_PRODUCTS: "get_products"
 };
 
 export function getProducts(params) {
@@ -18,14 +17,5 @@ export function getProducts(params) {
 		} catch (e) {
 			console.error(e);
 		}
-	};
-}
-
-export function getProductDetails(id) {
-	return dispatch => {
-		dispatch({
-			type: actionType.FILTER_PRODUCTS,
-			payload: id
-		});
 	};
 }

@@ -8,20 +8,7 @@ const reducer = (state = initialState, action) => {
 			return Object.assign(
 				{},
 				{
-					items: action.payload.groups,
-					allItems: action.payload.groups
-				}
-			);
-		case actionType.GET_PRODUCT_DETAILS:
-			return Object.assign(
-				{},
-				{
-					items: state.allItems.filter(item => {
-						return action.payload
-							? action.payload === item.id
-							: item;
-					}),
-					allItems: state.allItems
+					items: action.payload.groups
 				}
 			);
 		default:

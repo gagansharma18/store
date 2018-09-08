@@ -11,3 +11,34 @@ body {
 .logo {height: 30px;}
 
 .home{margin-top:70px;}
+
+.bold-xs {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.bold-xxs {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.regular-xs {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.regular-xxs {
+    font-weight: 400;
+    font-size: 13px;
+
+}
+.cl-DarkGrey {
+    color: #41434c;
+}
+
+.cl-Tomato {
+    color: #fb406b;
+}
+.fixed-top {
+    z-index: 999; /*OVERRIDE BOOTSTRAP CSS*/
+}
