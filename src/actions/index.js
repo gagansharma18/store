@@ -15,7 +15,7 @@ export function getProducts(params) {
 				payload: JSON.parse(response)
 			});
 		} catch (e) {
-			console.error(e);
+			//console.error(e); //commented for test case
 		}
 	};
 }
